@@ -53,16 +53,5 @@ yarn global add "file:$(pwd)"
 ### Usage
 
 ```sh
-Usage: universal-notification [options]
-
-Command-line UniversalNotification creator.
-
-Options:
-  -V, --version           output the version number
-  --title <title>
-  --message <message>
-  --icon-url <iconUrl>
-  --image-url <imageUrl>
-  --url <url>
-  -h, --help              display help for command
+universal-notification --help
 ```

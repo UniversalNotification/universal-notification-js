@@ -1,14 +1,9 @@
 #!/usr/bin/env node
-import { path as appRoot } from 'app-root-path'
 import { program } from 'commander'
 import { createUniversalNotification } from './create-universal-notification'
-import * as path from 'path'
-
-const pkg = require(path.join(appRoot, 'package.json'))
 
 program
   .name('universal-notification')
-  .version(pkg.version)
   .description('Command-line UniversalNotification creator.')
   .option('--title <title>')
   .option('--message <message>')
