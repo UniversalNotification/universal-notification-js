@@ -11,12 +11,13 @@ program
   .option('--image-url <imageUrl>')
   .option('--url <url>')
   .action(() => {
+    const opts = program.opts()
     const notification = createUniversalNotification({
-      title: program.title
-    , message: program.message
-    , iconUrl: program.iconUrl
-    , imageUrl: program.imageUrl
-    , url: program.url
+      title: opts.title
+    , message: opts.message
+    , iconUrl: opts.iconUrl
+    , imageUrl: opts.imageUrl
+    , url: opts.url
     })
     console.log(JSON.stringify(notification))
   })
